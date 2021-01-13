@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Userprofiles extends Model
 {
+    use SoftDeletes;
     protected $dates = ['deleted_at'];
 
     protected $table = 'userprofiles';

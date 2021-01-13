@@ -17,8 +17,9 @@ class CreateOrdersTable extends Migration
             $table->increments('idorders');
             $table->integer('idusers');
             $table->string('total')->nullable();
-            $table->string('quantity')->nullable();
+            // $table->string('quantity')->nullable();
             $table->string('codeorder');
+            $table->date('date_orders');
             $table->string('snap_token')->nullable();
             $table->enum('status_order', array('pending', 'success', 'failed', 'expired'));
             $table->enum('status_payments', array('paid','unpaid'));

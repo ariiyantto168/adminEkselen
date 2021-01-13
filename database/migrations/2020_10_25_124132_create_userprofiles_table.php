@@ -19,7 +19,7 @@ class CreateUserprofilesTable extends Migration
             $table->string('firstname');
             $table->string('lastname');
             $table->string('tempatlahir');
-            $table->date('date_born');
+            // $table->date('date_born');
             $table->string('jobrole');
             $table->text('address');
             $table->softDeletes();
